@@ -55,7 +55,7 @@ Foram comparados 3 modelos:
 - Random Forest Regressor
 - Gradient Boosting Regressor
 
-✔️ O modelo com melhor desempenho na partição de teste foi **`RandomForestRegressor`**.
+O modelo com melhor desempenho na partição de teste foi **`RandomForestRegressor`**.
 
 ---
 
