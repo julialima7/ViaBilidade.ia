@@ -1,0 +1,31 @@
+# Bytecode e cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambientes virtuais
+venv/
+.env/
+*.env
+
+# Arquivos de modelo treinado
+*.pkl
+*.joblib
+
+# Dados
+*.csv
+*.xlsx
+
+# Configs e logs
+*.log
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

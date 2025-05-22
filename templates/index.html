@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Preditor de Tempo de Manutenção</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Preditor de Tempo de Manutenção</h1>
+        <form action="/predict" method="post">
+            <label>Tipo de Manutenção (0=Corretiva, 1=Preventiva):</label>
+            <input type="number" name="tipo_manut">
+
+            <label>Técnico Responsável (ex: 0 a 3):</label>
+            <input type="number" name="tec_resp">
+
+            <label>POP Utilizado (ex: 0 a 5):</label>
+            <input type="number" name="POP_utiliz">
+
+            <label>Problema Recorrente (0=Não, 1=Sim):</label>
+            <input type="number" name="problema_recorr">
+
+            <label>Falha Crítica (0=Não, 1=Sim):</label>
+            <input type="number" name="falha_crit">
+
+            <label>Tempo de Resolução Padrão (min):</label>
+            <input type="number" step="0.1" name="tempo_resolucao_padr">
+
+            <label>Status da Manutenção (0=Pendente, 1=Concluído):</label>
+            <input type="number" name="status_manut">
+
+            <input type="submit" value="Prever Tempo">
+        </form>
+
+        <div class="resultado">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+    </div>
+</body>
+</html>
