@@ -33,7 +33,7 @@ Treinar e disponibilizar via API um modelo preditivo que, a partir de dados de m
 
 ---
 
-## 📊 Dados Utilizados
+## Dados Utilizados
 
 O dataset contém colunas como:
 - Data
